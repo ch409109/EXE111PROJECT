@@ -32,6 +32,16 @@ namespace EXE111PROJECT
 
             app.MapRazorPages();
 
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapRazorPages();
+                endpoints.MapGet("/", async context =>
+                {
+                    context.Response.Redirect("/Customer/Home");
+                    await context.Response.CompleteAsync();
+                });
+            });
+
             app.Run();
         }
     }

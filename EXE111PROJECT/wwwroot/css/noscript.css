@@ -1,0 +1,64 @@
+﻿/*
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/* Banner */
+
+	body.is-preload #banner h2 {
+		-moz-transform: none;
+		-webkit-transform: none;
+		-ms-transform: none;
+		transform: none;
+		opacity: 1;
+	}
+
+		body.is-preload #banner h2:before, body.is-preload #banner h2:after {
+			width: 100%;
+		}
+
+	body.is-preload #banner .more {
+		-moz-transform: none;
+		-webkit-transform: none;
+		-ms-transform: none;
+		transform: none;
+		opacity: 1;
+	}
+
+	body.is-preload #banner:after {
+		opacity: 0;
+	}
+	.about-sections {
+		display: flex;
+	}
+
+	.about-item {
+		flex: 1;
+		padding: 20px;
+		box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước phần tử */
+	}
+
+	.about-item h3 {
+		margin-top: 0; /* Để tiêu đề không có khoảng cách trên */
+	}
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.spotlight {
+	text-align: center;
+}
+
+.image img {
+	max-width: 100%;
+	height: auto;
+}
