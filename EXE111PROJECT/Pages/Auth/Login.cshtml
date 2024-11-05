@@ -1,0 +1,29 @@
+﻿@page
+@model EXE111PROJECT.Pages.Auth.LoginModel
+@{
+    ViewData["Title"] = "Đăng nhập";
+}
+
+<div class="min-vh-100 d-flex align-items-center justify-content-center bg-light">
+    <div class="bg-white p-4 rounded-3 shadow-sm" style="width: 100%; max-width: 400px;">
+        <div class="text-center mb-4">
+            <h3 class="text-primary">Đăng nhập</h3>
+        </div>
+        <form method="post">
+            <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="mb-3">
+                <input type="password" class="form-control" placeholder="Mật khẩu">
+            </div>
+            <button type="submit" class="btn btn-primary w-100 py-2">Đăng nhập</button>
+            <div class="text-center mt-3">
+                <a asp-page="/Auth/ForgotPassword" class="text-decoration-none text-primary">Quên mật khẩu?</a>
+                <br>
+                <span class="text-muted">Chưa có tài khoản? 
+                    <a asp-page="/Auth/Register" class="text-decoration-none text-primary">Đăng ký</a>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
